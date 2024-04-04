@@ -19,6 +19,7 @@ public class EnvProperties {
 			prop.load(EnvProperties.class.getResourceAsStream("env.properties")); //  EnvProperties 클래스파일이 있는 폴더에서 env.properties 파일 load
 		} catch (IOException e) {
 			e.printStackTrace();
+			System.out.println("properties 파일 없습니다.");
 		}
 	}
 
@@ -27,6 +28,7 @@ public class EnvProperties {
 			prop.load(EnvProperties.class.getResourceAsStream("env.properties"));
 		} catch (IOException e) {
 			e.printStackTrace();
+			System.out.println("properties 파일 없습니다.");
 		}
     }
 
